@@ -32,6 +32,8 @@
 		22EE13821820DDE50098E777 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EE13811820DDE50098E777 /* SystemConfiguration.framework */; };
 		22EE13841820DE150098E777 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EE13831820DE150098E777 /* Security.framework */; };
 		22EE13861820DE1C0098E777 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EE13851820DE1C0098E777 /* MobileCoreServices.framework */; };
+		42D7D7DA1827C90B005E0F8F /* PCSystemAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D7D7D91827C90B005E0F8F /* PCSystemAccountManager.m */; };
+		42D7D7DE1827C918005E0F8F /* PCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D7D7DD1827C918005E0F8F /* PCUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		22EE13811820DDE50098E777 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		22EE13831820DE150098E777 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		22EE13851820DE1C0098E777 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		42D7D7D81827C90B005E0F8F /* PCSystemAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCSystemAccountManager.h; sourceTree = "<group>"; };
+		42D7D7D91827C90B005E0F8F /* PCSystemAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSystemAccountManager.m; sourceTree = "<group>"; };
+		42D7D7DC1827C918005E0F8F /* PCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCUser.h; sourceTree = "<group>"; };
+		42D7D7DD1827C918005E0F8F /* PCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,8 @@
 		223B0C93181A435B003CDC22 /* Perfect Citizen */ = {
 			isa = PBXGroup;
 			children = (
+				42D7D7DB1827C918005E0F8F /* Models */,
+				42D7D7D71827C90B005E0F8F /* Custom Classes */,
 				223B0C9F181A435B003CDC22 /* Main.storyboard */,
 				223B0C9C181A435B003CDC22 /* PCAppDelegate.h */,
 				223B0C9D181A435B003CDC22 /* PCAppDelegate.m */,
@@ -219,6 +227,24 @@
 				2299FC7C1827A2CA004F28AB /* DropDownView.m */,
 			);
 			name = Dropdown;
+			sourceTree = "<group>";
+		};
+		42D7D7D71827C90B005E0F8F /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42D7D7D81827C90B005E0F8F /* PCSystemAccountManager.h */,
+				42D7D7D91827C90B005E0F8F /* PCSystemAccountManager.m */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		42D7D7DB1827C918005E0F8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42D7D7DC1827C918005E0F8F /* PCUser.h */,
+				42D7D7DD1827C918005E0F8F /* PCUser.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,10 +349,12 @@
 				2299FC7D1827A2CA004F28AB /* DropDownView.m in Sources */,
 				223B0CCB181A8C3B003CDC22 /* UINavigationItem+JTRevealSidebarV2.m in Sources */,
 				223B0CC4181A8725003CDC22 /* PCIssueListViewController.m in Sources */,
+				42D7D7DA1827C90B005E0F8F /* PCSystemAccountManager.m in Sources */,
 				223B0CA4181A435B003CDC22 /* PCHomeViewController.m in Sources */,
 				22EE13761820CA950098E777 /* PCLoginViewController.m in Sources */,
 				223B0CCC181A8C3B003CDC22 /* UIViewController+JTRevealSidebarV2.m in Sources */,
 				223B0C9E181A435B003CDC22 /* PCAppDelegate.m in Sources */,
+				42D7D7DE1827C918005E0F8F /* PCUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
