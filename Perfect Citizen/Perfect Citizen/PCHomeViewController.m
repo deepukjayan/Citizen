@@ -11,6 +11,12 @@
 
 @interface PCHomeViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextField *txtIssueTitle;
+@property (strong, nonatomic) IBOutlet UITextView *txtIssueDescription;
+@property (strong, nonatomic) IBOutlet UIButton *btnCategory;
+
+
+- (IBAction)resignFirstResponder:(id)sender;
 @end
 
 @implementation PCHomeViewController
@@ -27,5 +33,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)resignFirstResponder:(id)sender{
+    [self.txtIssueDescription resignFirstResponder];
+    [self.txtIssueTitle resignFirstResponder];
+}
 
+- (IBAction)btnCategoryTap:(id)sender {
+#warning Delete this if category is being droppped from the very idea.
+}
 @end
