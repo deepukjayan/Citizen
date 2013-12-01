@@ -37,6 +37,14 @@
     [self.txtIssueDescription resignFirstResponder];
     [self.txtIssueTitle resignFirstResponder];
 }
+- (IBAction)submitTApped:(id)sender {
+    
+    PFObject *issue = [PFObject objectWithClassName:@"issue"];
+    [issue setObject:self.txtIssueTitle.text forKey:@"title"];
+    [issue setObject:self.txtIssueDescription.text forKey:@"description"];
+    [issue save];
+    
+}
 
 - (IBAction)btnCategoryTap:(id)sender {
 #warning Delete this if category is being droppped from the very idea.

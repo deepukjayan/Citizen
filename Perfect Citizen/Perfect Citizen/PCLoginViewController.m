@@ -56,6 +56,7 @@
 }
 
 - (IBAction)anonymousButtonClicked:(id)sender {
-    
+    [self performSegueWithIdentifier:@"loadReportIssuePage" sender:self];
+
 }
 @end

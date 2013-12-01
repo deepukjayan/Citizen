@@ -18,6 +18,8 @@
     [PFTwitterUtils initializeWithConsumerKey:@"BpV8oqhz70T5WNiHTdXc5w"
                                consumerSecret:@"YNoU5NNt3RWdcBZ835Ife0laJPhSAOzQvwiW1qOM"];
     
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 							
